@@ -180,26 +180,6 @@ const WelcomeText: React.FC = () => {
               className="absolute inset-0 overflow-y-auto space-y-2 pr-4 -mr-4 hover:pr-0 hover:-mr-0 transition-[padding,margin] duration-200"
             >
               <div className="space-y-2 hover-scrollbar">
-                <style jsx>{`
-                  .hover-scrollbar {
-                    scrollbar-width: none;
-                    -ms-overflow-style: none;
-                  }
-                  .hover-scrollbar::-webkit-scrollbar {
-                    width: 6px;
-                  }
-                  .hover-scrollbar::-webkit-scrollbar-track {
-                    background: transparent;
-                  }
-                  .hover-scrollbar::-webkit-scrollbar-thumb {
-                    background-color: transparent;
-                    border-radius: 20px;
-                    transition: background-color 0.2s;
-                  }
-                  div:hover .hover-scrollbar::-webkit-scrollbar-thumb {
-                    background-color: rgb(203 213 225);
-                  }
-                `}</style>
                 <AnimatePresence>
                   {filteredMessages.map((message, index) => (
                     <motion.div

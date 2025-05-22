@@ -74,3 +74,22 @@
       @apply bg-background text-foreground;
     }
   }
+
+.hover-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hover-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.hover-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.hover-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+div:hover .hover-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(203 213 225);
+}
